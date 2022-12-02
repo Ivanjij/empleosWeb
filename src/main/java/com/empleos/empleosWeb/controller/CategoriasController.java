@@ -50,7 +50,7 @@ public class CategoriasController {
 	public String mostrarIndexPaginadoCat(Model model, Pageable page) {
 		Page<Categoria> lista = serviceCategorias.buscarTodas(page);
 		model.addAttribute("categorias", lista);
-		return "categorias/listCategorias";
+		return "Categorias/listCategorias";
 	}
 
 	@GetMapping("/index")
